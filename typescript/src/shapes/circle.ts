@@ -1,6 +1,6 @@
-function circle(radius: number): Shape {
+function circle(radiusIn: number): Shape {
+    let radius: number = radiusIn
     return {
-        radius,
         computeArea: function (): number {
             return Math.PI * radius * radius
         }
